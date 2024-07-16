@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
-
+/***fontawesome <script src="https://kit.fontawesome.com/95dc93da07.js"></script> *********/
 
 
 
@@ -16,7 +16,6 @@ body{
 }
 ul{
     list-style: none;
-    /* margin-left: 150px; */
 }
 a{
     text-decoration: none;
@@ -30,10 +29,8 @@ input{
     border: none;
 }
 .logo img{
-    margin: 10px;
     width: 120px;
 }
-
 .header{
 
     width:100%;
@@ -43,22 +40,15 @@ input{
     background-size: cover;
     background-image: url("./images/header-bg.png");
 }
-/* ul.menu{
-    margin-left: 770px;
-} */
-
 nav{
-    position: fixed;
 	display: flex;
-    flex-wrap: wrap;
-	/* justify-content: space-around; */
+	justify-content: space-around;
 	align-items: center;
-	/* left: 0; */
-	/* top: 0; */
-	/* width:100%; */
+	left: 0;
+	top: 0;
+	width:100%;
 	z-index: 1;
-	/* background-color: #c4baba; */
-    background-color: green;
+	background-color: #FFFFFF;
 }
 nav ul{
 	display: flex;
@@ -73,7 +63,7 @@ nav ul li a{
 	height:40px;
 	line-height: 43px;
 	margin: 3px;
-	padding: 0px 12px;
+	padding: 0px 22px;
 	display: flex;
 	font-size: 0.8rem;
 	text-transform: uppercase;
@@ -84,24 +74,19 @@ nav ul li a{
     transition: 0.2s ease-in-out;
 }
 .property{
-    margin-left: 70px;
-    margin-right: 28px;
-    /* font-family: calibri; */
+    font-family: calibri;
 	height:40px;
-    width: 100px;
-    justify-content: center;
 	line-height: 43px;
 	padding: 0px 10px;
 	display: flex;
-	/* font-size: 0.8rem; */
+	font-size: 0.8rem;
 	text-transform: uppercase;
 	font-weight: 500;
 	color:#ffffff;
-    /* letter-spacing: 1px; */
-    border-radius: 20px;
-    /* transition: 0.2s ease-in-out; */
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
     background-color: #236c7e;
-    
 }
 nav ul li a:hover{
 	background-color: #064757;
@@ -111,7 +96,7 @@ nav ul li a:hover{
 }
 nav .menu-btn,
 .menu-icon{
-		/* display:none; */
+		display:none;
 	}
 .intro{
 	font-family: 'Montserrat';
@@ -129,9 +114,8 @@ nav .menu-btn,
 }
 .intro h1{
 	font-family:'Montserrat';
-	font-size: 1.9rem;
+	font-size: 46px;
 	margin:0px;
-    
 	letter-spacing: 3px;
 	color:#236c7e;
 }
@@ -198,7 +182,7 @@ nav .menu-btn,
 }
   .about{
 	width:100%;
-	height: 70vh;
+	height: 100vh;
 	background-color:#ffffff;
 	box-sizing: border-box;
 	display: flex;
@@ -245,7 +229,7 @@ nav .menu-btn,
 
 .agent{
     width:100%;
-    /* height:70vh; */
+    height:110vh;
     box-sizing: border-box;
     font-family: calibri;
     display: flex;
@@ -337,13 +321,13 @@ nav .menu-btn,
 	width: 100%;
 	background-color: #FFFFFF;
 	display: flex;
-	/* height: 760px; */
+	height: 760px;
 	flex-direction: column;
 	align-items: center;
 	padding:40px 20px;
 	position: relative;
 	border-radius: 10px;
-	/* margin-top: 70px; */
+	margin-top: 70px;
 }
  
  
@@ -442,7 +426,7 @@ nav .menu-btn,
 	justify-content: center;
 	align-items: center;
     margin:10px 0px;
-    
+    margin-top: 80px;
     padding: 30px 0px;
 }
 .contact h3{
@@ -451,7 +435,7 @@ nav .menu-btn,
     color: #ffffff;
 }
 .contact-input{
-	width:260px;
+	width:400px;
 	height:50px;
 	background-color:#FFFFFF;
 	display:flex;
@@ -480,14 +464,11 @@ nav .menu-btn,
 	border-radius: 20px;
 	font-weight: 500;
 }
-
-  @media(max-width:1190px){ */
-	 .header{
+@media(max-width:1190px){
+	.header{
         background-size: 1150px !important;
         text-align: center;
-	} 
-
-     
+	}
 	.intro{
 		left: 10%;
 		top: 50%;
@@ -509,9 +490,9 @@ nav .menu-btn,
 		object-fit:contain;
 	}
 
-} 
+}
 
- @media(max-width:970px){
+@media(max-width:970px){
 	.main{
 		background-image: none !important;
 		
@@ -538,11 +519,9 @@ nav .menu-btn,
 	.about-text h1{
 		font-size:4rem;
     }
-    
 	
 }
 
- 
 @media(max-width:600px){
 	.intro{
 		width:60%;
@@ -558,18 +537,19 @@ nav .menu-btn,
         .how-it-works .flex > div {
             width: 100%;
             margin-top: 2rem;
-        } 
-         
-        } 
+        }
+        .contact{
+            margin-top: 1000px;
+        }
     
- @media(max-width:1100px){.menu-icon{
+@media(max-width:1100px){.menu-icon{
     display:block;}
-        /* nav{
+        nav{
             justify-content: space-between;
             height: 65px;
             padding: 0px 30px;
             position: fixed;
-        } */
+        }
         .property{
             background: none;
             font-size: 13px;
@@ -580,8 +560,8 @@ nav .menu-btn,
             width:70px;
         }
         .menu{
-            /* display:none; */
-            /* position:absolute; */
+            display:none;
+            position:absolute;
             top:65px;
             left:0px;
             background-color:#FFFFFF;
@@ -602,15 +582,15 @@ nav .menu-btn,
             padding: 25px;
             border:1px solid rgba(38,38,38,0.03);
         }
-         nav .menu-icon{
+        nav .menu-icon{
             cursor:pointer;
             float:right;
             padding:28px 20px;
             position:relative;
             user-select: none;
-        } 
+        }
         nav .menu-icon .nav-icon{
-            background-color:#f40707;
+            background-color:#333333;
             display:block;
             height:2px;
             position:relative;
@@ -627,34 +607,32 @@ nav .menu-btn,
             transition:all ease-out 0.2s;
             width:100%;
         }
-        /* nav .menu-icon .nav-icon:before{
+        nav .menu-icon .nav-icon:before{
             top:5px;
         }
         nav .menu-icon .nav-icon:after{
             top:-5px;
-        } */
-        /* nav .menu-btn:checked ~ .menu-icon .nav-icon{
+        }
+        nav .menu-btn:checked ~ .menu-icon .nav-icon{
             background:transparent;
-        }*/
-        /* nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
+        }
+        nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
             transform: rotate(-45deg);
-            top:0; 
-        }*/
-       /* nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
+            top:0;
+        }
+        nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
             transform: rotate(45deg);
-            top:0; 
-        }*/
+            top:0;
+        }
         nav .menu-btn{
             display:none;
         }
         nav .menu-btn:checked ~ .menu{
             display:block;
         }}
-
-
         @media(max-width:400px){
             .s-box{
                 width: 100%;
                 height:400px;
             }
-        } 
+        }}
